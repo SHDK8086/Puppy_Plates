@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".Kibblecategory"
+    android:background="#D5DFDE">
+
+    <TextView
+        android:id="@+id/kibble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canned Products"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kibble"
+        android:layout_marginTop="20dp"
+        android:hint="Search products"
+        android:padding="8dp"
+        android:textColorHint="@color/black"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kibble"
+        android:layout_marginTop="70dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/productLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productCard5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hills"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/product_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hill's Science Diet Adult Beef and Barley"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-160dp"
+                        android:layout_marginStart="140dp"/>
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:text="Hill's Science Diet Adult Beef and Barley offers balanced nutrition with beef and barley for digestive health."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="140dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="120$"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/product5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-35dp"
+                        android:text="Add to Cart"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginStart="260dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/productCard6"
+                android:layout_height="200dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/raw"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/product_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primal Pork Formula"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-150dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:text="Primal Pork Formula provides high-quality, hormone-free pork with organic fruits and vegetables for balanced nutrition."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="90$"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/product6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-35dp"
+                        android:text="Add to Cart"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginStart="260dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productCard7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/purina"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/product_name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wellness CORE Grain-Free Original"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-150dp"
+                        android:layout_marginStart="160dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:text="Wellness CORE Grain-Free Original offers high protein from turkey and chicken for balanced, grain-free nutrition.."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="160dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="60$"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/product7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-35dp"
+                        android:text="Add to Cart"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginStart="270dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productCard8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/texas"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/product_name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merrick Grain-Free Texas Beef and Sweet Potato"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-160dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:text="Merrick Grain-Free Texas Beef and Sweet Potato offers high-quality beef and nutritious sweet potatoes for balanced, grain-free nutrition."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="50$"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/product8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-35dp"
+                        android:text="Add to Cart"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginStart="260dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

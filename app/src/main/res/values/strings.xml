@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="category_array">
+        <item>Kibble</item>
+        <item>Canned</item>
+        <item>Suppliments</item>
+        <item>Treats</item>
+        <item>Accessories</item>
+    </string-array>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".Kibblecategory"
+    android:background="#D5DFDE">
+
+    <TextView
+        android:id="@+id/kibble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Tips"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kibble"
+        android:layout_marginTop="0dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/productLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="117dp"
+                        android:layout_height="117dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/husky"
+                        android:background="@color/white"
+                        android:layout_marginTop="60dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dog Breeds"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-160dp"
+                        android:layout_marginStart="200dp"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="160dp"
+                        android:text="Dog breeds offer a wide range of characteristics, from the friendly, active nature of Labradors to the intelligent, hypoallergenic coat of Poodles. Each breed has distinct needs, including specific exercise routines, grooming requirements, and dietary preferences. Understanding these traits helps owners provide the best care tailored to their dog’s breed."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="130dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Duplicate CardViews for additional products -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cycle"
+                        android:layout_marginStart="250dp"
+                        android:layout_marginTop="30dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Life stages"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-190dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:layout_width="240dp"
+                        android:layout_height="170dp"
+                        android:text="Dogs go through distinct life stages: puppy, adult, and senior. Puppies need high-protein diets for growth and early training for socialization. Adults require balanced nutrition, regular exercise, and routine vet care. Senior dogs benefit from joint-supporting nutrients, softer foods, and adjusted activity levels to maintain health and comfort as they age."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/diet"
+                        android:background="@color/white"
+                        android:layout_marginTop="40dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dietary Requirements"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-200dp"
+                        android:layout_marginStart="160dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="180dp"
+                        android:text="Dog dietary needs vary based on age, breed, and activity level. Active dogs benefit from high-protein diets, while those with allergies may require grain-free options. Weight management diets focus on portion control and low-calorie foods. Puppies need nutrient-rich food for growth, while seniors benefit from joint-supporting nutrients and easily digestible meals."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="160dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

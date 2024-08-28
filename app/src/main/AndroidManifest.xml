@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:label="Puppy Plates"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/puppy_plates"
+        android:roundIcon="@mipmap/puppy_plates_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PuppyPlates"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Kibblecategory"
+            android:exported="true" />
+        <activity
+            android:name=".Accessorriescategory"
+            android:exported="true" />
+        <activity
+            android:name=".Cannedcategory"
+            android:exported="true" />
+        <activity
+            android:name=".Treatscategory"
+            android:exported="true" />
+        <activity
+            android:name=".Supplimentcategory"
+            android:exported="true" />
+        <activity
+            android:name=".Cart"
+            android:exported="true" />
+        <activity
+            android:name=".HealthTips"
+            android:exported="true" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="true" />
+        <activity
+            android:name=".Payment"
+            android:exported="true" />
+
+
+
+    </application>
+
+</manifest>
